@@ -1,12 +1,118 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
-  <!-- 引入核心 JS，defer 确保在解析完 html 后执行 -->
-  <script src="file/js/main.js" defer></script>
+  
+  <link rel="preconnect" href="https://www.loliapi.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.loliapi.com">
+  <link rel="preload" as="image" href="https://q2.qlogo.cn/headimg_dl?dst_uin=156440000&spec=640">
+
+  <title>GuYi official - 可爱(keai)官网发布页 | QQ模拟器与网络验证</title>
+  <meta name="description" content="欢迎访问 GuYi official 官方发布页暨旗下全项目聚合导航。这里是可爱(keai)官网、可爱发布页，被誉为模拟器的天花板与模拟器最高的山。汇集QQ模拟器、支付宝模拟器、QQ靓号、网络验证等核心业务。">
+  <meta name="keywords" content="GuYi official, GuYi, 可爱, keai, 可爱官网, 可爱发布页, QQ模拟器, 支付宝模拟器, 可爱网络验证, 接定制, 出源码">
+  <meta name="author" content="GuYi official">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://guyiovo.github.io/GuYi-Access-wed/">
+  
+  <meta property="og:title" content="GuYi official - 可爱(keai)官网与全项目发布页">
+  <meta property="og:description" content="接定制，出源码，一键直达我们的网络验证官网、QQ模拟器（模拟器的天花板）及各项核心业务。">
+  <meta property="og:image" content="https://q2.qlogo.cn/headimg_dl?dst_uin=156440000&spec=640">
+  <meta property="og:url" content="https://guyiovo.github.io/GuYi-Access-wed/">
+  <meta property="og:type" content="website">
+  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0b0f1a">
+  <link rel="icon" href="https://q2.qlogo.cn/headimg_dl?dst_uin=156440000&spec=640">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://guyiovo.github.io/GuYi-Access-wed/",
+    "name": "GuYi official - 可爱官网",
+    "alternateName": ["GuYi", "可爱发布页", "顾依", "可爱模拟器", "GuYi Access"],
+    "description": "提供QQ模拟器、支付宝模拟器、网络验证、出源码接定制服务的权威官方发布页。",
+    "publisher": {
+      "@type": "Organization",
+      "name": "GuYi official",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://q2.qlogo.cn/headimg_dl?dst_uin=156440000&spec=640"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
+    :root { --bg: #f7fafc; --paper: #fff; --ink: #0f172a; --muted: #6b7280; --border: #e5e7eb; --brand: #22c55e; --brand2: #3b82f6; --shadow-1: 0 4px 20px #0002; --shadow-2: 0 10px 30px #0003; --radius-card: 20px; --radius-btn: 14px; --decor: none; --btn-tilt: -.2deg; --btn-glow: none; --glass-bg: rgba(255, 255, 255, 0.03); --glass-border: rgba(255, 255, 255, 0.08); --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); --backdrop-blur: blur(4px); --backdrop-saturate: saturate(180%); --good-bg: #dcfce7; --good-ink: #065f46; --good-bd: #bbf7d0; --warn-bg: #fef3c7; --warn-ink: #92400e; --warn-bd: #fde68a; --bad-bg: #fee2e2; --bad-ink: #7f1d1d; --bad-bd: #fecaca; --dur-fast: .18s; --dur-med: .32s; --dur-slow: .6s; --ease-entr: cubic-bezier(.2, .8, .2, 1); --fs-xs: clamp(11px,1.2vw, 12px); --fs-sm: clamp(12.5px, 1.4vw, 14.5px); --fs-base: clamp(14px, 1.7vw, 16px); --fs-lg: clamp(18px, 2.2vw, 22px); --fs-xl: clamp(22px, 2.8vw, 26px); --card-w: min(640px, 94vw); --grad-warn: linear-gradient(90deg, #f59e0b66, #fbbf24, #f59e0b66); --grad-bad: linear-gradient(90deg, #ef444466, #fca5a5, #ef444466); } 
+    body.theme-dark { color-scheme: dark; --bg: #0b0f1a; --paper: #0f1524; --ink: #e5e7eb; --muted: #9ca3af; --border: #1f2937; --brand: #38bdf8; --brand2: #6366f1; --shadow-1: 0 12px 30px #0008; --shadow-2: 0 20px 44px #000a; --btn-tilt: -.4deg; --decor: radial-gradient(40rem 32rem at 10% -10%, #111936, transparent 60%), radial-gradient(36rem 28rem at 110% 110%, #0d1328, transparent 60%); --good-bg: #064e3b; --good-ink: #a7f3d0; --good-bd: #065f46; --warn-bg: #3f2d00; --warn-ink: #fde68a; --warn-bd: #f59e0b; --bad-bg: #3a0d0d; --bad-ink: #fecaca; --bad-bd: #ef4444; --glass-bg: rgba(15, 21, 36, 0.05); --glass-border: rgba(255, 255, 255, 0.02); --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); --backdrop-blur: blur(4px); } 
+    *, *::before, *::after { box-sizing: border-box; -webkit-tap-highlight-color: transparent; } html, body { height: 100%; } body { margin: 0; background: var(--bg); color: var(--ink); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,"PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei",Helvetica, Arial, sans-serif; transition: background var(--dur-med), color var(--dur-med); } .background-image { position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; transition: opacity 0.5s ease;pointer-events: none; will-change: opacity; } .theme-dark .background-image { filter: brightness(0.7) contrast(1.1); } .decor { position: fixed; inset: 0; pointer-events: none; background: var(--decor); transition: background var(--dur-slow);will-change: filter; } #Snow { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 2; opacity: 0.6; } .wrap { min-height: 100dvh; display: grid; place-items: center; padding:8vmin 3vmin; } .card { width: var(--card-w); background: rgba(11, 15, 26, 0.02); backdrop-filter: blur(2px) saturate(120%); -webkit-backdrop-filter: blur(2px) saturate(120%); border-radius: var(--radius-card); border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(255, 255, 255, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.2); padding: 26px 22px 22px; position: relative; overflow: hidden; animation: cardIn var(--dur-slow) var(--ease-entr) both; contain: layout paint style; backface-visibility: hidden; } @keyframes cardIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } } .card.tilt { transition: transform .12s ease; will-change: transform; } h1 { font-size: var(--fs-xl); font-weight: 800; text-align: center; margin: 0 0 4px 0; background: linear-gradient(135deg, var(--brand), var(--brand2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; } .sub { font-size: var(--fs-sm); color: var(--muted); text-align: center; margin: 0 0 20px 0; font-weight: 500; } .logo { width: 56px; height: 56px; border-radius: 14px; display: grid; place-items: center; margin: 0 auto 8px; background: linear-gradient(135deg, var(--brand), var(--brand2)); color: #fff; font-weight: 800; letter-spacing: .5px; box-shadow: 0 8px 20px #00000020, var(--glass-shadow); filter: var(--btn-glow); animation: floatY 4s ease-in-out infinite, sway 7.2s ease-in-out infinite, logoPop .8s var(--ease-entr) both; position: relative; overflow: hidden; } .logo img { width: 100%; height: 100%; object-fit: contain; border-radius: inherit; display: block; } @keyframes floatY { 0%, 100% { transform: translateY(0px); } 50%{ transform: translateY(-6px); } } @keyframes sway { 0%, 100% { transform: rotate(0deg); } 25% { transform: rotate(1deg); } 75% { transform: rotate(-1deg); } } @keyframes logoPop { 0%{ opacity: 0; transform: scale(0.8) rotate(-10deg); } 100% { opacity: 1; transform: scale(1) rotate(0deg); } } .paragraphs p { margin: 10px 0; padding: 15px; background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(1px); -webkit-backdrop-filter: blur(1px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: var(--radius-btn); font-size: var(--fs-sm); line-height: 1.6; color: var(--ink); box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.03); } .particles { position: absolute; inset: -10%; pointer-events: none; filter: blur(0.2px); opacity: .22; } .particle { position: absolute; width: 3px; height: 3px; border-radius: 50%; background: currentColor; animation: float 8s linear infinite; } @keyframes float { from { transform: translateY(0); } to { transform: translateY(-40vh); } } .stack { display: flex; flex-direction: column; gap: 10px; } .btn { display: flex; align-items: center; justify-content: space-between; gap: 12px; background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(1px); -webkit-backdrop-filter: blur(1px); color: inherit; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: var(--radius-btn); padding: 14px 16px; text-decoration: none; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15); transition: all var(--dur-fast) ease; position: relative; isolation: isolate; opacity: 0; transform: translateY(8px); will-change: transform;overflow: hidden; } .stack.ready .btn { animation: fadeUp var(--dur-slow) var(--ease-entr) forwards; } .stack.ready .btn:nth-child(1) { animation-delay: .05s; } .stack.ready .btn:nth-child(2) { animation-delay: .15s; } .stack.ready .btn:nth-child(3) { animation-delay: .25s; } .stack.ready .btn:nth-child(4) { animation-delay: .35s; } .stack.ready .btn:nth-child(5) { animation-delay: .45s; } @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } } .left{ display: flex; align-items: center; gap: 10px; font-weight: 800; } .right { margin-left: auto; display: flex; align-items: center; gap: 8px; } .tag { font-size: var(--fs-xs); font-weight: 800; padding: .28rem .58rem; border-radius: 999px; background: color-mix(in srgb, var(--brand2) 18%, #fff); color: #0b1320; border: 1px solid color-mix(in srgb, var(--brand2) 40%, #fff); } .arrow { display: inline-grid; place-items: center; width: 22px; height: 22px; flex: 0 0 22px; transition: transform .28s var(--ease-entr); } .btn > * { position: relative; z-index: 2; } @media (hover: hover) { .btn:hover { background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.25); transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3); } .btn:hover .arrow { transform: translateX(2px) rotate(-12deg); } .btn::after { content: ""; position: absolute; inset: 0; border-radius: inherit; z-index: 0; background: color-mix(in srgb, var(--brand) 14%, transparent 86%); opacity: 0; transform: translateY(4px); transition: opacity .35s var(--ease-entr), transform .35s var(--ease-entr); } .btn::before { content: ""; position: absolute; inset: -1px; border-radius: inherit; z-index: 1; pointer-events: none; background: linear-gradient(100deg, transparent 35%, color-mix(in srgb, var(--brand) 75%, #fff) 50%, transparent 65%); background-size: 200% 100%; background-position: 0% 50%; opacity: 0; transition: opacity .35s var(--ease-entr), background-position .6s ease; } .btn:hover::after{ opacity: .9; transform: translateY(0); } .btn:hover::before { opacity: 1; background-position: 100% 50%; } } .btn:active { transform: translateY(0) scale(.985); filter: brightness(.95); } .btn:focus-visible { outline: 2px solid color-mix(in srgb, var(--brand) 70%, #fff); outline-offset: 3px; } .sheen { position: absolute; inset: 0; border-radius: inherit; overflow: hidden; pointer-events: none; } .sheen::before { content: ""; position: absolute; inset: -40%; transform: skewX(-22deg) translateX(-120%); background: linear-gradient(90deg, transparent, #ffffff8040%, transparent 60%); transition: transform .9s var(--ease-entr); } @media (hover: hover) { .btn:hover .sheen::before { transform: skewX(-22deg) translateX(120%); } } .ripple { position: absolute; border-radius: 50%; pointer-events: none; transform: translate(-50%, -50%); opacity: .35; background: currentColor; mix-blend-mode: multiply; animation: ripple .6s ease-out forwards; } @keyframes ripple { from { width: 0;height: 0; opacity: .35; } to { width: 360px; height: 360px; opacity: 0; } } .chip { font-size: calc(var(--fs-xs) + 1px); font-weight: 800; padding: .42rem .7rem; border-radius: 999px; min-width: 72px; text-align: center; border: 1px solid var(--glass-border); background: color-mix(in srgb, var(--glass-bg) 85%, transparent); color: var(--ink); position: relative; box-shadow: var(--glass-shadow); will-change: transform; } .good { background: var(--good-bg); color: var(--good-ink); border-color: var(--good-bd); } .warn { background: var(--warn-bg); color: var(--warn-ink); border-color: var(--warn-bd); } .bad { background: var(--bad-bg); color: var(--bad-ink); border-color: var(--bad-bd); } .foot { margin-top: 14px; font-size: var(--fs-xs); color: var(--muted); text-align: center; } .waterfall-bg { --mouse-x: 0px; --mouse-y: 0px; position: fixed; inset: 0; display: flex; gap: 1rem; pointer-events: none; z-index: -2; transform: rotate(-15deg) scale(1.5) translate(var(--mouse-x), var(--mouse-y)); transition: transform .1s ease-out; } .waterfall-column { flex: 1; overflow: hidden; } .scroll-track { display: flex; flex-direction: column; animation: wf-scrollDown 300s linear infinite; } .waterfall-column:nth-child(2) .scroll-track { animation-name: wf-scrollUp; animation-duration: 320s; } .waterfall-column:nth-child(3) .scroll-track { animation-name: wf-scrollDown; animation-duration: 340s; } .waterfall-column:nth-child(4) .scroll-track { animation-name: wf-scrollUp; animation-duration: 360s; } .image-group { display: flex; flex-direction: column; gap: 1rem; } .image-group img { width: 100%; height: auto; border-radius: .5rem; opacity: .55; filter: brightness(1); display: block; } @keyframes wf-scrollDown { 0%{ transform: translateY(0); } 100% { transform: translateY(-50%); } } @keyframes wf-scrollUp { 0% { transform: translateY(-50%); } 100% { transform: translateY(0); } } @media (max-width: 768px) { .waterfall-bg { gap: .5rem; transform: rotate(-15deg) scale(1.5); transition: none; } .image-group { gap: .5rem; } .waterfall-column:nth-child(3), .waterfall-column:nth-child(4) { display: none; } .image-group img:nth-child(n+13) { display: none; } } @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } .card, .btn, .stack.ready .btn { opacity: 1; transform: none; } }
+  </style>
 </head>
-<body>
-  <!-- 页面内容将由 main.js 动态生成 -->
+<body class="theme-dark">
+
+  <article class="sr-only">
+    <h1>GuYi official - 可爱(keai)官方发布页</h1>
+    <p>欢迎来到 GuYi official。这里是全网闻名的“可爱(keai)官网”及“可爱发布页”。被誉为模拟器的天花板与模拟器最高的山。</p>
+    <h2>我们的核心业务与服务</h2>
+    <p>提供专业技术服务：接定制、出源码、QQ黑金、QQ靓号、专属冠名服务、QQ模拟器、支付宝模拟器等。</p>
+  </article>
+
+  <div id="waterfall-container" aria-hidden="true"></div>
+  
+  <canvas id="Snow" aria-hidden="true"></canvas>
+  <div class="decor" aria-hidden="true"></div>
+
+  <main class="wrap">
+    <section class="card tilt theme-fade" role="region" aria-label="导航卡片">
+      <div class="logo theme-fade" aria-hidden="true">
+        <img id="site-logo" src="https://q2.qlogo.cn/headimg_dl?dst_uin=156440000&spec=640" alt="GuYi Logo" width="56" height="56">
+      </div>
+      
+      <h1>可可爱爱</h1>
+      <p class="sub">GuYi</p>
+      
+      <div class="paragraphs">
+        <p>有问题进群联系对应的管理 &nbsp;·&nbsp; 接定制 &nbsp;·&nbsp; 出源码</p>
+      </div>
+      
+      <div class="particles" id="particles" aria-hidden="true"></div>
+      
+      <nav class="stack" role="list" id="stack" aria-label="核心导航快捷链接">
+        <a class="btn" id="link-global" href="https://official.xn--jpr071e.top/" target="_blank" rel="noopener noreferrer" role="listitem" title="访问 GuYi Access 全球高速线路">
+          <div class="left"><span class="tag" aria-hidden="true">1</span><span>官网 - 全球高速线路</span></div>
+          <div class="right"><span id="ping-global" class="chip" aria-live="polite" aria-label="节点延迟检测中">测速中</span><span class="arrow" aria-hidden="true">➜</span></div>
+          <span class="sheen" aria-hidden="true"></span>
+        </a>
+        <a class="btn" id="link-overseas" href="https://guyiovo.github.io/GuYi-Access-wed/" target="_blank" rel="noopener noreferrer" role="listitem" title="访问 GuYi Access 海外专线">
+          <div class="left"><span class="tag" aria-hidden="true">2</span><span>官网 - 海外线路</span></div>
+          <div class="right"><span id="ping-overseas" class="chip" aria-live="polite" aria-label="节点延迟检测中">测速中</span><span class="arrow" aria-hidden="true">➜</span></div>
+          <span class="sheen" aria-hidden="true"></span>
+        </a>
+        <a class="btn" id="link-tools" href="https://tools.xn--jpr071e.top/" target="_blank" rel="noopener noreferrer" role="listitem" title="访问 GuYi Tools 站长工具箱">
+          <div class="left"><span class="tag" aria-hidden="true">3</span><span>GuYi Tools</span></div>
+          <div class="right"><span id="ping-tools" class="chip" aria-live="polite" aria-label="节点延迟检测中">测速中</span><span class="arrow" aria-hidden="true">➜</span></div>
+          <span class="sheen" aria-hidden="true"></span>
+        </a>
+        <a class="btn" id="link-download" href="https://downloadpage.xn--jpr071e.top/" target="_blank" rel="noopener noreferrer" role="listitem" title="访问 GuYi 核心源码下载仓库">
+          <div class="left"><span class="tag" aria-hidden="true">4</span><span>下载仓库</span></div>
+          <div class="right"><span id="ping-download" class="chip" aria-live="polite" aria-label="节点延迟检测中">测速中</span><span class="arrow" aria-hidden="true">➜</span></div>
+          <span class="sheen" aria-hidden="true"></span>
+        </a>
+        <a class="btn" id="link-qq" href="https://qm.qq.com/q/R8q8Nt43aS" target="_blank" rel="noopener noreferrer" role="listitem" title="加入 GuYi 官方QQ技术交流群">
+          <div class="left"><span class="tag" aria-hidden="true">5</span><span>官方群</span></div>
+          <div class="right"><span id="ping-qq" class="chip" aria-live="polite" aria-label="节点延迟检测中">测速中</span><span class="arrow" aria-hidden="true">➜</span></div>
+          <span class="sheen" aria-hidden="true"></span>
+        </a>
+      </nav>
+      
+      <footer class="foot" role="contentinfo" id="poem-container"></footer>
+    </section>
+  </main>
+
+  <script src="file/js/main.js" defer></script>
 </body>
 </html>
