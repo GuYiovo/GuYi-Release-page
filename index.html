@@ -26,33 +26,277 @@
   <meta name="theme-color" content="#0b0f1a">
   <link rel="icon" href="https://q2.qlogo.cn/headimg_dl?dst_uin=156440000&spec=640">
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "url": "https://guyiovo.github.io/GuYi-Access-wed/",
-    "name": "GuYi official - 可爱官网",
-    "alternateName": ["GuYi", "可爱发布页", "顾依", "可爱模拟器", "GuYi Access"],
-    "description": "提供QQ模拟器、支付宝模拟器、网络验证、出源码接定制服务的权威官方发布页。",
-    "publisher": {
-      "@type": "Organization",
-      "name": "GuYi official",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://q2.qlogo.cn/headimg_dl?dst_uin=156440000&spec=640"
-      }
-    }
-  }
-  </script>
-
   <style>
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
-    :root { --bg: #f7fafc; --paper: #fff; --ink: #0f172a; --muted: #6b7280; --border: #e5e7eb; --brand: #22c55e; --brand2: #3b82f6; --shadow-1: 0 4px 20px #0002; --shadow-2: 0 10px 30px #0003; --radius-card: 20px; --radius-btn: 14px; --decor: none; --btn-tilt: -.2deg; --btn-glow: none; --glass-bg: rgba(255, 255, 255, 0.03); --glass-border: rgba(255, 255, 255, 0.08); --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); --backdrop-blur: blur(4px); --backdrop-saturate: saturate(180%); --good-bg: #dcfce7; --good-ink: #065f46; --good-bd: #bbf7d0; --warn-bg: #fef3c7; --warn-ink: #92400e; --warn-bd: #fde68a; --bad-bg: #fee2e2; --bad-ink: #7f1d1d; --bad-bd: #fecaca; --dur-fast: .18s; --dur-med: .32s; --dur-slow: .6s; --ease-entr: cubic-bezier(.2, .8, .2, 1); --fs-xs: clamp(11px,1.2vw, 12px); --fs-sm: clamp(12.5px, 1.4vw, 14.5px); --fs-base: clamp(14px, 1.7vw, 16px); --fs-lg: clamp(18px, 2.2vw, 22px); --fs-xl: clamp(22px, 2.8vw, 26px); --card-w: min(640px, 94vw); --grad-warn: linear-gradient(90deg, #f59e0b66, #fbbf24, #f59e0b66); --grad-bad: linear-gradient(90deg, #ef444466, #fca5a5, #ef444466); } 
-    body.theme-dark { color-scheme: dark; --bg: #0b0f1a; --paper: #0f1524; --ink: #e5e7eb; --muted: #9ca3af; --border: #1f2937; --brand: #38bdf8; --brand2: #6366f1; --shadow-1: 0 12px 30px #0008; --shadow-2: 0 20px 44px #000a; --btn-tilt: -.4deg; --decor: radial-gradient(40rem 32rem at 10% -10%, #111936, transparent 60%), radial-gradient(36rem 28rem at 110% 110%, #0d1328, transparent 60%); --good-bg: #064e3b; --good-ink: #a7f3d0; --good-bd: #065f46; --warn-bg: #3f2d00; --warn-ink: #fde68a; --warn-bd: #f59e0b; --bad-bg: #3a0d0d; --bad-ink: #fecaca; --bad-bd: #ef4444; --glass-bg: rgba(15, 21, 36, 0.05); --glass-border: rgba(255, 255, 255, 0.02); --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); --backdrop-blur: blur(4px); } 
-    *, *::before, *::after { box-sizing: border-box; -webkit-tap-highlight-color: transparent; } html, body { height: 100%; } body { margin: 0; background: var(--bg); color: var(--ink); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,"PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei",Helvetica, Arial, sans-serif; transition: background var(--dur-med), color var(--dur-med); } .background-image { position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; transition: opacity 0.5s ease;pointer-events: none; will-change: opacity; } .theme-dark .background-image { filter: brightness(0.7) contrast(1.1); } .decor { position: fixed; inset: 0; pointer-events: none; background: var(--decor); transition: background var(--dur-slow);will-change: filter; } #Snow { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 2; opacity: 0.6; } .wrap { min-height: 100dvh; display: grid; place-items: center; padding:8vmin 3vmin; } .card { width: var(--card-w); background: rgba(11, 15, 26, 0.02); backdrop-filter: blur(2px) saturate(120%); -webkit-backdrop-filter: blur(2px) saturate(120%); border-radius: var(--radius-card); border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(255, 255, 255, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.2); padding: 26px 22px 22px; position: relative; overflow: hidden; animation: cardIn var(--dur-slow) var(--ease-entr) both; contain: layout paint style; backface-visibility: hidden; } @keyframes cardIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } } .card.tilt { transition: transform .12s ease; will-change: transform; } h1 { font-size: var(--fs-xl); font-weight: 800; text-align: center; margin: 0 0 4px 0; background: linear-gradient(135deg, var(--brand), var(--brand2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; } .sub { font-size: var(--fs-sm); color: var(--muted); text-align: center; margin: 0 0 20px 0; font-weight: 500; } .logo { width: 56px; height: 56px; border-radius: 14px; display: grid; place-items: center; margin: 0 auto 8px; background: linear-gradient(135deg, var(--brand), var(--brand2)); color: #fff; font-weight: 800; letter-spacing: .5px; box-shadow: 0 8px 20px #00000020, var(--glass-shadow); filter: var(--btn-glow); animation: floatY 4s ease-in-out infinite, sway 7.2s ease-in-out infinite, logoPop .8s var(--ease-entr) both; position: relative; overflow: hidden; } .logo img { width: 100%; height: 100%; object-fit: contain; border-radius: inherit; display: block; } @keyframes floatY { 0%, 100% { transform: translateY(0px); } 50%{ transform: translateY(-6px); } } @keyframes sway { 0%, 100% { transform: rotate(0deg); } 25% { transform: rotate(1deg); } 75% { transform: rotate(-1deg); } } @keyframes logoPop { 0%{ opacity: 0; transform: scale(0.8) rotate(-10deg); } 100% { opacity: 1; transform: scale(1) rotate(0deg); } } .paragraphs p { margin: 10px 0; padding: 15px; background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(1px); -webkit-backdrop-filter: blur(1px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: var(--radius-btn); font-size: var(--fs-sm); line-height: 1.6; color: var(--ink); box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.03); } .particles { position: absolute; inset: -10%; pointer-events: none; filter: blur(0.2px); opacity: .22; } .particle { position: absolute; width: 3px; height: 3px; border-radius: 50%; background: currentColor; animation: float 8s linear infinite; } @keyframes float { from { transform: translateY(0); } to { transform: translateY(-40vh); } } .stack { display: flex; flex-direction: column; gap: 10px; } .btn { display: flex; align-items: center; justify-content: space-between; gap: 12px; background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(1px); -webkit-backdrop-filter: blur(1px); color: inherit; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: var(--radius-btn); padding: 14px 16px; text-decoration: none; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15); transition: all var(--dur-fast) ease; position: relative; isolation: isolate; opacity: 0; transform: translateY(8px); will-change: transform;overflow: hidden; } .stack.ready .btn { animation: fadeUp var(--dur-slow) var(--ease-entr) forwards; } .stack.ready .btn:nth-child(1) { animation-delay: .05s; } .stack.ready .btn:nth-child(2) { animation-delay: .15s; } .stack.ready .btn:nth-child(3) { animation-delay: .25s; } .stack.ready .btn:nth-child(4) { animation-delay: .35s; } .stack.ready .btn:nth-child(5) { animation-delay: .45s; } @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } } .left{ display: flex; align-items: center; gap: 10px; font-weight: 800; } .right { margin-left: auto; display: flex; align-items: center; gap: 8px; } .tag { font-size: var(--fs-xs); font-weight: 800; padding: .28rem .58rem; border-radius: 999px; background: color-mix(in srgb, var(--brand2) 18%, #fff); color: #0b1320; border: 1px solid color-mix(in srgb, var(--brand2) 40%, #fff); } .arrow { display: inline-grid; place-items: center; width: 22px; height: 22px; flex: 0 0 22px; transition: transform .28s var(--ease-entr); } .btn > * { position: relative; z-index: 2; } @media (hover: hover) { .btn:hover { background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.25); transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3); } .btn:hover .arrow { transform: translateX(2px) rotate(-12deg); } .btn::after { content: ""; position: absolute; inset: 0; border-radius: inherit; z-index: 0; background: color-mix(in srgb, var(--brand) 14%, transparent 86%); opacity: 0; transform: translateY(4px); transition: opacity .35s var(--ease-entr), transform .35s var(--ease-entr); } .btn::before { content: ""; position: absolute; inset: -1px; border-radius: inherit; z-index: 1; pointer-events: none; background: linear-gradient(100deg, transparent 35%, color-mix(in srgb, var(--brand) 75%, #fff) 50%, transparent 65%); background-size: 200% 100%; background-position: 0% 50%; opacity: 0; transition: opacity .35s var(--ease-entr), background-position .6s ease; } .btn:hover::after{ opacity: .9; transform: translateY(0); } .btn:hover::before { opacity: 1; background-position: 100% 50%; } } .btn:active { transform: translateY(0) scale(.985); filter: brightness(.95); } .btn:focus-visible { outline: 2px solid color-mix(in srgb, var(--brand) 70%, #fff); outline-offset: 3px; } .sheen { position: absolute; inset: 0; border-radius: inherit; overflow: hidden; pointer-events: none; } .sheen::before { content: ""; position: absolute; inset: -40%; transform: skewX(-22deg) translateX(-120%); background: linear-gradient(90deg, transparent, #ffffff8040%, transparent 60%); transition: transform .9s var(--ease-entr); } @media (hover: hover) { .btn:hover .sheen::before { transform: skewX(-22deg) translateX(120%); } } .ripple { position: absolute; border-radius: 50%; pointer-events: none; transform: translate(-50%, -50%); opacity: .35; background: currentColor; mix-blend-mode: multiply; animation: ripple .6s ease-out forwards; } @keyframes ripple { from { width: 0;height: 0; opacity: .35; } to { width: 360px; height: 360px; opacity: 0; } } .chip { font-size: calc(var(--fs-xs) + 1px); font-weight: 800; padding: .42rem .7rem; border-radius: 999px; min-width: 72px; text-align: center; border: 1px solid var(--glass-border); background: color-mix(in srgb, var(--glass-bg) 85%, transparent); color: var(--ink); position: relative; box-shadow: var(--glass-shadow); will-change: transform; } .good { background: var(--good-bg); color: var(--good-ink); border-color: var(--good-bd); } .warn { background: var(--warn-bg); color: var(--warn-ink); border-color: var(--warn-bd); } .bad { background: var(--bad-bg); color: var(--bad-ink); border-color: var(--bad-bd); } .foot { margin-top: 14px; font-size: var(--fs-xs); color: var(--muted); text-align: center; } .waterfall-bg { --mouse-x: 0px; --mouse-y: 0px; position: fixed; inset: 0; display: flex; gap: 1rem; pointer-events: none; z-index: -2; transform: rotate(-15deg) scale(1.5) translate(var(--mouse-x), var(--mouse-y)); transition: transform .1s ease-out; } .waterfall-column { flex: 1; overflow: hidden; } .scroll-track { display: flex; flex-direction: column; animation: wf-scrollDown 300s linear infinite; } .waterfall-column:nth-child(2) .scroll-track { animation-name: wf-scrollUp; animation-duration: 320s; } .waterfall-column:nth-child(3) .scroll-track { animation-name: wf-scrollDown; animation-duration: 340s; } .waterfall-column:nth-child(4) .scroll-track { animation-name: wf-scrollUp; animation-duration: 360s; } .image-group { display: flex; flex-direction: column; gap: 1rem; } .image-group img { width: 100%; height: auto; border-radius: .5rem; opacity: .55; filter: brightness(1); display: block; } @keyframes wf-scrollDown { 0%{ transform: translateY(0); } 100% { transform: translateY(-50%); } } @keyframes wf-scrollUp { 0% { transform: translateY(-50%); } 100% { transform: translateY(0); } } @media (max-width: 768px) { .waterfall-bg { gap: .5rem; transform: rotate(-15deg) scale(1.5); transition: none; } .image-group { gap: .5rem; } .waterfall-column:nth-child(3), .waterfall-column:nth-child(4) { display: none; } .image-group img:nth-child(n+13) { display: none; } } @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } .card, .btn, .stack.ready .btn { opacity: 1; transform: none; } }
+    :root { 
+      --bg: #f7fafc; --paper: #fff; --ink: #0f172a; --muted: #6b7280; --border: #e5e7eb; 
+      --brand: #22c55e; --brand2: #3b82f6; 
+      --radius-card: 24px; --radius-btn: 16px; 
+      --decor: none; --btn-tilt: -.2deg; --btn-glow: none; 
+      --glass-bg: rgba(255, 255, 255, 0.03); --glass-border: rgba(255, 255, 255, 0.08); --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); 
+      --good-bg: #dcfce7; --good-ink: #065f46; --good-bd: #bbf7d0; 
+      --warn-bg: #fef3c7; --warn-ink: #92400e; --warn-bd: #fde68a; 
+      --bad-bg: #fee2e2; --bad-ink: #7f1d1d; --bad-bd: #fecaca; 
+      --dur-fast: .18s; --dur-med: .32s; --dur-slow: .6s; --ease-entr: cubic-bezier(.2, .8, .2, 1); 
+      --fs-xs: clamp(11.5px, 1.2vw, 13px); 
+      --fs-sm: clamp(13px, 1.4vw, 15.5px); 
+      --fs-base: clamp(14px, 1.7vw, 16px); 
+      --fs-xl: clamp(26px, 3.2vw, 32px); 
+      --card-w: min(1040px, 94vw); 
+    } 
+    body.theme-dark { 
+      color-scheme: dark; --bg: #0b0f1a; --paper: #0f1524; --ink: #e5e7eb; --muted: #9ca3af; --border: #1f2937; 
+      --brand: #38bdf8; --brand2: #6366f1; 
+      --btn-tilt: -.4deg; 
+      --decor: radial-gradient(40rem 32rem at 10% -10%, #111936, transparent 60%), radial-gradient(36rem 28rem at 110% 110%, #0d1328, transparent 60%); 
+      --good-bg: #064e3b; --good-ink: #a7f3d0; --good-bd: #065f46; 
+      --warn-bg: #3f2d00; --warn-ink: #fde68a; --warn-bd: #f59e0b; 
+      --bad-bg: #3a0d0d; --bad-ink: #fecaca; --bad-bd: #ef4444; 
+      --glass-bg: rgba(15, 21, 36, 0.05); --glass-border: rgba(255, 255, 255, 0.02); --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); 
+    } 
+    *, *::before, *::after { box-sizing: border-box; -webkit-tap-highlight-color: transparent; } 
+    html, body { height: 100%; } 
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,"PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei",Helvetica, Arial, sans-serif; transition: background var(--dur-med), color var(--dur-med); } 
+    
+    .decor { position: fixed; inset: 0; pointer-events: none; background: var(--decor); transition: background var(--dur-slow);will-change: filter; } 
+    #Snow { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 2; opacity: 0.6; } 
+    .wrap { min-height: 100dvh; display: grid; place-items: center; padding: 8vmin 3vmin; } 
+    
+    /* PC端卡片样式 */
+    .card { width: var(--card-w); background: rgba(11, 15, 26, 0.02); backdrop-filter: blur(4px) saturate(120%); -webkit-backdrop-filter: blur(4px) saturate(120%); border-radius: var(--radius-card); border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(255, 255, 255, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.2); padding: 56px 64px; position: relative; overflow: hidden; animation: cardIn var(--dur-slow) var(--ease-entr) both; contain: layout paint style; backface-visibility: hidden; } 
+    .card-content { display: grid; grid-template-columns: 1fr 1.35fr; gap: 60px; align-items: center; position: relative; z-index: 2; } 
+    .card-header { display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; padding-right: 60px; border-right: 1px dashed rgba(255, 255, 255, 0.15); height: 100%; justify-content: center; } 
+    .card-body { width: 100%; display: flex; flex-direction: column; justify-content: center;} 
+    
+    @keyframes cardIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } } .card.tilt { transition: transform .12s ease; will-change: transform; } 
+    h1 { font-size: var(--fs-xl); font-weight: 800; text-align: center; margin: 0 0 6px 0; background: linear-gradient(135deg, var(--brand), var(--brand2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; } 
+    .sub { font-size: var(--fs-sm); color: var(--muted); text-align: center; margin: 0 0 20px 0; font-weight: 500; letter-spacing: 1px;} 
+    
+    .logo { width: 88px; height: 88px; border-radius: 22px; display: grid; place-items: center; margin: 0 auto 16px; background: rgba(255,255,255,0.05); color: #fff; font-weight: 800; letter-spacing: .5px; box-shadow: 0 10px 24px #00000040, var(--glass-shadow); filter: var(--btn-glow); animation: floatY 4s ease-in-out infinite, sway 7.2s ease-in-out infinite, logoPop .8s var(--ease-entr) both; position: relative; overflow: hidden; border: 2px solid rgba(255,255,255,0.15); } 
+    .logo img { width: 100%; height: 100%; object-fit: cover; border-radius: inherit; display: block; } 
+    
+    @keyframes floatY { 0%, 100% { transform: translateY(0px); } 50%{ transform: translateY(-6px); } } @keyframes sway { 0%, 100% { transform: rotate(0deg); } 25% { transform: rotate(1deg); } 75% { transform: rotate(-1deg); } } @keyframes logoPop { 0%{ opacity: 0; transform: scale(0.8) rotate(-10deg); } 100% { opacity: 1; transform: scale(1) rotate(0deg); } } 
+    
+    .paragraphs p { margin: 15px 0 0 0; padding: 0; background: transparent; border: none; font-size: var(--fs-sm); line-height: 1.8; color: var(--ink); opacity: 0.85; box-shadow: none; font-weight: 400;} 
+    
+    .particles { position: absolute; inset: -10%; pointer-events: none; filter: blur(0.2px); opacity: .22; } .particle { position: absolute; width: 3px; height: 3px; border-radius: 50%; background: currentColor; animation: float 8s linear infinite; } @keyframes float { from { transform: translateY(0); } to { transform: translateY(-40vh); } } 
+    
+    .stack { display: flex; flex-direction: column; gap: 18px; } 
+    .btn { display: flex; align-items: center; justify-content: space-between; gap: 12px; background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(2px); -webkit-backdrop-filter: blur(2px); color: inherit; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: var(--radius-btn); padding: 18px 24px; text-decoration: none; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15); transition: all var(--dur-fast) ease; position: relative; isolation: isolate; opacity: 0; transform: translateY(8px); will-change: transform;overflow: hidden; } 
+    .stack.ready .btn { animation: fadeUp var(--dur-slow) var(--ease-entr) forwards; } .stack.ready .btn:nth-child(1) { animation-delay: .05s; } .stack.ready .btn:nth-child(2) { animation-delay: .15s; } .stack.ready .btn:nth-child(3) { animation-delay: .25s; } .stack.ready .btn:nth-child(4) { animation-delay: .35s; } .stack.ready .btn:nth-child(5) { animation-delay: .45s; } @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } } 
+    .left{ display: flex; align-items: center; gap: 12px; font-weight: 800; } .right { margin-left: auto; display: flex; align-items: center; gap: 8px; } 
+    .tag { font-size: var(--fs-xs); font-weight: 800; padding: .28rem .58rem; border-radius: 999px; background: color-mix(in srgb, var(--brand2) 18%, #fff); color: #0b1320; border: 1px solid color-mix(in srgb, var(--brand2) 40%, #fff); } 
+    .arrow { display: inline-grid; place-items: center; width: 22px; height: 22px; flex: 0 0 22px; transition: transform .28s var(--ease-entr); } .btn > * { position: relative; z-index: 2; } 
+    @media (hover: hover) { .btn:hover { background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.25); transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3); } .btn:hover .arrow { transform: translateX(2px) rotate(-12deg); } .btn::after { content: ""; position: absolute; inset: 0; border-radius: inherit; z-index: 0; background: color-mix(in srgb, var(--brand) 14%, transparent 86%); opacity: 0; transform: translateY(4px); transition: opacity .35s var(--ease-entr), transform .35s var(--ease-entr); } .btn::before { content: ""; position: absolute; inset: -1px; border-radius: inherit; z-index: 1; pointer-events: none; background: linear-gradient(100deg, transparent 35%, color-mix(in srgb, var(--brand) 75%, #fff) 50%, transparent 65%); background-size: 200% 100%; background-position: 0% 50%; opacity: 0; transition: opacity .35s var(--ease-entr), background-position .6s ease; } .btn:hover::after{ opacity: .9; transform: translateY(0); } .btn:hover::before { opacity: 1; background-position: 100% 50%; } } .btn:active { transform: translateY(0) scale(.985); filter: brightness(.95); } .btn:focus-visible { outline: 2px solid color-mix(in srgb, var(--brand) 70%, #fff); outline-offset: 3px; } .sheen { position: absolute; inset: 0; border-radius: inherit; overflow: hidden; pointer-events: none; } .sheen::before { content: ""; position: absolute; inset: -40%; transform: skewX(-22deg) translateX(-120%); background: linear-gradient(90deg, transparent, #ffffff8040%, transparent 60%); transition: transform .9s var(--ease-entr); } @media (hover: hover) { .btn:hover .sheen::before { transform: skewX(-22deg) translateX(120%); } } .ripple { position: absolute; border-radius: 50%; pointer-events: none; transform: translate(-50%, -50%); opacity: .35; background: currentColor; mix-blend-mode: multiply; animation: ripple .6s ease-out forwards; } @keyframes ripple { from { width: 0;height: 0; opacity: .35; } to { width: 360px; height: 360px; opacity: 0; } } 
+    .chip { font-size: calc(var(--fs-xs) + 1px); font-weight: 800; padding: .42rem .7rem; border-radius: 999px; min-width: 72px; text-align: center; border: 1px solid var(--glass-border); background: color-mix(in srgb, var(--glass-bg) 85%, transparent); color: var(--ink); position: relative; box-shadow: var(--glass-shadow); will-change: transform; } .good { background: var(--good-bg); color: var(--good-ink); border-color: var(--good-bd); } .warn { background: var(--warn-bg); color: var(--warn-ink); border-color: var(--warn-bd); } .bad { background: var(--bad-bg); color: var(--bad-ink); border-color: var(--bad-bd); } 
+    
+    .foot { margin-top: 32px; font-size: var(--fs-xs); color: var(--muted); text-align: center; font-style: italic; opacity: 0.7; min-height: 20px; transition: opacity 0.3s ease;} 
+    
+    .waterfall-bg { --mouse-x: 0px; --mouse-y: 0px; position: fixed; inset: 0; display: flex; gap: 1rem; pointer-events: none; z-index: -2; transform: rotate(-15deg) scale(1.5) translate(var(--mouse-x), var(--mouse-y)); transition: transform .1s ease-out; } .waterfall-column { flex: 1; overflow: hidden; } .scroll-track { display: flex; flex-direction: column; animation: wf-scrollDown 300s linear infinite; } .waterfall-column:nth-child(2) .scroll-track { animation-name: wf-scrollUp; animation-duration: 320s; } .waterfall-column:nth-child(3) .scroll-track { animation-name: wf-scrollDown; animation-duration: 340s; } .waterfall-column:nth-child(4) .scroll-track { animation-name: wf-scrollUp; animation-duration: 360s; } .image-group { display: flex; flex-direction: column; gap: 1rem; } .image-group img { width: 100%; height: auto; border-radius: .5rem; opacity: .55; filter: brightness(1); display: block; } @keyframes wf-scrollDown { 0%{ transform: translateY(0); } 100% { transform: translateY(-50%); } } @keyframes wf-scrollUp { 0% { transform: translateY(-50%); } 100% { transform: translateY(0); } } 
+    
+    /* ======== 玻璃拟态(Glassmorphism) 极致透明播放器 ======== */
+    .ios-music-widget {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      /* 极致透明背景 */
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(20px) saturate(140%);
+      -webkit-backdrop-filter: blur(20px) saturate(140%);
+      /* 细腻的高光亮暗边框，增强立体感 */
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-top-color: rgba(255, 255, 255, 0.3);
+      border-left-color: rgba(255, 255, 255, 0.2);
+      padding: 6px 16px 6px 6px;
+      border-radius: 999px;
+      margin: 22px auto 0;
+      cursor: pointer;
+      width: fit-content;
+      transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+      /* 柔和的环境阴影与内发光 */
+      box-shadow: 
+        0 8px 32px -4px rgba(0, 0, 0, 0.3), 
+        inset 0 1px 2px rgba(255, 255, 255, 0.15);
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* 移动端悬浮在右下角的专属样式 */
+    .ios-music-widget.mobile-float {
+      position: fixed;
+      /* 使用安全区环境变量防止被 iPhone 小白条遮挡 */
+      bottom: max(24px, env(safe-area-inset-bottom, 24px));
+      right: 20px;
+      margin: 0;
+      z-index: 9999;
+      padding: 5px 14px 5px 5px;
+      gap: 10px;
+      /* 悬浮时稍稍增加一点背景反光感 */
+      background: rgba(255, 255, 255, 0.06);
+      box-shadow: 
+        0 12px 30px rgba(0, 0, 0, 0.5), 
+        inset 0 1px 2px rgba(255, 255, 255, 0.25);
+    }
+    .ios-music-widget.mobile-float .ios-music-cover {
+      width: 28px;
+      height: 28px;
+    }
+    .ios-music-widget.mobile-float .ios-music-text {
+      font-size: 13px;
+    }
+
+    /* 模拟玻璃表面的对角环境反光层 */
+    .ios-music-widget::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 40%, rgba(255, 255, 255, 0.02) 100%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* 悬浮发光 */
+    @media (hover: hover) {
+      .ios-music-widget:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.35);
+        transform: translateY(-2px);
+        box-shadow: 
+          0 12px 40px -4px rgba(0, 0, 0, 0.4), 
+          inset 0 1px 3px rgba(255, 255, 255, 0.25);
+      }
+    }
+
+    /* 按压缩小阻尼反馈 */
+    .ios-music-widget:active {
+      transform: scale(0.93) translateY(0);
+      background: rgba(255, 255, 255, 0.01);
+      border-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .ios-music-cover {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      /* 封面增加微边框以脱离背景 */
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      transition: opacity 0.5s, filter 0.5s;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .ios-music-widget:not(.playing) .ios-music-cover {
+      opacity: 0.85;
+      filter: grayscale(20%);
+    }
+    .ios-music-widget.playing .ios-music-cover {
+      opacity: 1;
+      filter: grayscale(0%);
+      animation: ios-spin 8s linear infinite;
+    }
+    @keyframes ios-spin { 100% { transform: rotate(360deg); } }
+
+    .ios-music-text {
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.95);
+      letter-spacing: 0.5px;
+      transition: color 0.3s;
+      position: relative;
+      z-index: 1;
+      /* 增强玻璃介质上的文字清晰度 */
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); 
+    }
+
+    .ios-music-action {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 2px;
+      width: 16px;
+      height: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* 暂停状态播放图标 */
+    .ios-play-icon {
+      width: 14px;
+      height: 14px;
+      fill: rgba(255, 255, 255, 0.9);
+      filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4));
+    }
+    .ios-music-widget.playing .ios-play-icon {
+      display: none;
+    }
+
+    /* 播放频谱跳动动画 (重做为ScaleY变换，性能更好) */
+    .ios-waveform {
+      display: none;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 2.5px;
+      height: 14px;
+    }
+    .ios-music-widget.playing .ios-waveform {
+      display: flex;
+    }
+    .ios-waveform span {
+      display: block;
+      width: 2.5px;
+      height: 100%;
+      background: var(--brand); /* 跟随主题的品牌色 */
+      border-radius: 3px;
+      transform-origin: bottom;
+      animation: ios-bounce 0.5s ease-in-out infinite alternate;
+      /* 发光感 */
+      box-shadow: 0 0 8px var(--brand);
+    }
+    .ios-waveform span:nth-child(1) { animation-duration: 0.4s; animation-delay: 0s; }
+    .ios-waveform span:nth-child(2) { animation-duration: 0.5s; animation-delay: 0.1s; }
+    .ios-waveform span:nth-child(3) { animation-duration: 0.3s; animation-delay: 0.2s; }
+    .ios-waveform span:nth-child(4) { animation-duration: 0.6s; animation-delay: 0.1s; }
+    
+    @keyframes ios-bounce { 
+      0% { transform: scaleY(0.2); } 
+      100% { transform: scaleY(1); } 
+    }
+
+    /* 移动端响应式适配 */
+    @media (max-width: 768px) { 
+        .wrap { padding: 4vmin 5vw; } 
+        .card { padding: 28px 20px; border-radius: 20px; width: 100%;}
+        .card-content { grid-template-columns: 1fr; gap: 20px; } 
+        .card-header { padding-right: 0; border-right: none; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 20px; height: auto; } 
+        .logo { width: 64px; height: 64px; border-radius: 16px; margin-bottom: 12px;}
+        h1 { font-size: 22px; margin-bottom: 2px; }
+        .sub { font-size: 13px; margin-bottom: 12px; }
+        .paragraphs p { font-size: 13px; line-height: 1.5; margin-top: 8px; }
+        .foot { margin-top: 24px; font-size: 12px; } 
+        .stack { gap: 12px; }
+        .btn { padding: 14px 16px; border-radius: 14px;}
+        .left { gap: 10px; font-size: 14px; }
+        .tag { padding: 0.2rem 0.5rem; font-size: 11px; }
+        .chip { min-width: 60px; padding: 0.3rem 0.5rem; font-size: 11px; } 
+        .waterfall-bg { gap: .5rem; transform: rotate(-15deg) scale(1.5); transition: none; } 
+        .image-group { gap: .5rem; } 
+        .waterfall-column:nth-child(3), .waterfall-column:nth-child(4) { display: none; } 
+        .image-group img:nth-child(n+13) { display: none; } 
+    } 
+    
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } .card, .btn, .stack.ready .btn { opacity: 1; transform: none; } }
   </style>
 </head>
 <body class="theme-dark">
+
+  <!-- 背景音乐源文件 -->
+  <audio id="bg-music" src="file/mp3/music.mp3" loop preload="auto"></audio>
 
   <article class="sr-only">
     <h1>GuYi official - 可爱(keai)官方发布页</h1>
@@ -68,51 +312,164 @@
 
   <main class="wrap">
     <section class="card tilt theme-fade" role="region" aria-label="导航卡片">
-      <div class="logo theme-fade" aria-hidden="true">
-        <img id="site-logo" src="https://q2.qlogo.cn/headimg_dl?dst_uin=156440000&spec=640" alt="GuYi Logo" width="56" height="56">
-      </div>
-      
-      <h1>可可爱爱</h1>
-      <p class="sub">GuYi</p>
-      
-      <div class="paragraphs">
-        <p>有问题进群联系对应的管理 &nbsp;·&nbsp; 接定制 &nbsp;·&nbsp; 出源码</p>
-      </div>
       
       <div class="particles" id="particles" aria-hidden="true"></div>
       
-      <nav class="stack" role="list" id="stack" aria-label="核心导航快捷链接">
-        <a class="btn" id="link-global" href="https://official.xn--jpr071e.top/" target="_blank" rel="noopener noreferrer" role="listitem" title="访问 GuYi Access 全球高速线路">
-          <div class="left"><span class="tag" aria-hidden="true">1</span><span>官网 - 全球高速线路</span></div>
-          <div class="right"><span id="ping-global" class="chip" aria-live="polite" aria-label="节点延迟检测中">测速中</span><span class="arrow" aria-hidden="true">➜</span></div>
-          <span class="sheen" aria-hidden="true"></span>
-        </a>
-        <a class="btn" id="link-overseas" href="https://guyiovo.github.io/GuYi-Access-wed/" target="_blank" rel="noopener noreferrer" role="listitem" title="访问 GuYi Access 海外专线">
-          <div class="left"><span class="tag" aria-hidden="true">2</span><span>官网 - 海外线路</span></div>
-          <div class="right"><span id="ping-overseas" class="chip" aria-live="polite" aria-label="节点延迟检测中">测速中</span><span class="arrow" aria-hidden="true">➜</span></div>
-          <span class="sheen" aria-hidden="true"></span>
-        </a>
-        <a class="btn" id="link-tools" href="https://tools.xn--jpr071e.top/" target="_blank" rel="noopener noreferrer" role="listitem" title="访问 GuYi Tools 站长工具箱">
-          <div class="left"><span class="tag" aria-hidden="true">3</span><span>GuYi Tools</span></div>
-          <div class="right"><span id="ping-tools" class="chip" aria-live="polite" aria-label="节点延迟检测中">测速中</span><span class="arrow" aria-hidden="true">➜</span></div>
-          <span class="sheen" aria-hidden="true"></span>
-        </a>
-        <a class="btn" id="link-download" href="https://downloadpage.xn--jpr071e.top/" target="_blank" rel="noopener noreferrer" role="listitem" title="访问 GuYi 核心源码下载仓库">
-          <div class="left"><span class="tag" aria-hidden="true">4</span><span>下载仓库</span></div>
-          <div class="right"><span id="ping-download" class="chip" aria-live="polite" aria-label="节点延迟检测中">测速中</span><span class="arrow" aria-hidden="true">➜</span></div>
-          <span class="sheen" aria-hidden="true"></span>
-        </a>
-        <a class="btn" id="link-qq" href="https://qm.qq.com/q/R8q8Nt43aS" target="_blank" rel="noopener noreferrer" role="listitem" title="加入 GuYi 官方QQ技术交流群">
-          <div class="left"><span class="tag" aria-hidden="true">5</span><span>官方群</span></div>
-          <div class="right"><span id="ping-qq" class="chip" aria-live="polite" aria-label="节点延迟检测中">测速中</span><span class="arrow" aria-hidden="true">➜</span></div>
-          <span class="sheen" aria-hidden="true"></span>
-        </a>
-      </nav>
+      <div class="card-content">
+        <!-- 左侧区域：头像、标题与寄语 -->
+        <div class="card-header" id="pc-widget-container">
+          <div class="logo theme-fade" aria-hidden="true">
+            <img id="site-logo" src="https://q2.qlogo.cn/headimg_dl?dst_uin=156440000&spec=640" alt="GuYi Logo" width="88" height="88">
+          </div>
+          
+          <h1>可可爱爱</h1>
+          <p class="sub">GuYi</p>
+          
+          <div class="paragraphs">
+            <p>有问题进群联系对应的管理<br>接定制 · 出源码</p>
+          </div>
+
+          <!-- ======== 玻璃拟态播放组件 ======== -->
+          <div class="ios-music-widget" id="music-widget" title="点击播放" role="button" tabindex="0">
+            <img class="ios-music-cover" src="https://q2.qlogo.cn/headimg_dl?dst_uin=156440000&spec=640" alt="Cover">
+            
+            <span class="ios-music-text" id="music-status">点击播放</span>
+            
+            <div class="ios-music-action">
+              <svg class="ios-play-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <div class="ios-waveform">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 右侧区域：导航链接 -->
+        <div class="card-body">
+          <nav class="stack" role="list" id="stack" aria-label="核心导航快捷链接">
+            <a class="btn" id="link-global" href="https://official.xn--jpr071e.top/" target="_blank" rel="noopener noreferrer" role="listitem" title="访问 GuYi Access 全球高速线路">
+              <div class="left"><span class="tag" aria-hidden="true">1</span><span>官网 - 全球高速线路</span></div>
+              <div class="right"><span id="ping-global" class="chip" aria-live="polite" aria-label="节点延迟检测中">测速中</span><span class="arrow" aria-hidden="true">➜</span></div>
+              <span class="sheen" aria-hidden="true"></span>
+            </a>
+            <a class="btn" id="link-overseas" href="https://guyiovo.github.io/GuYi-Access-wed/" target="_blank" rel="noopener noreferrer" role="listitem" title="访问 GuYi Access 海外专线">
+              <div class="left"><span class="tag" aria-hidden="true">2</span><span>官网 - 海外线路</span></div>
+              <div class="right"><span id="ping-overseas" class="chip" aria-live="polite" aria-label="节点延迟检测中">测速中</span><span class="arrow" aria-hidden="true">➜</span></div>
+              <span class="sheen" aria-hidden="true"></span>
+            </a>
+            <a class="btn" id="link-tools" href="https://tools.xn--jpr071e.top/" target="_blank" rel="noopener noreferrer" role="listitem" title="访问 GuYi Tools 站长工具箱">
+              <div class="left"><span class="tag" aria-hidden="true">3</span><span>GuYi Tools</span></div>
+              <div class="right"><span id="ping-tools" class="chip" aria-live="polite" aria-label="节点延迟检测中">测速中</span><span class="arrow" aria-hidden="true">➜</span></div>
+              <span class="sheen" aria-hidden="true"></span>
+            </a>
+            <a class="btn" id="link-download" href="https://downloadpage.xn--jpr071e.top/" target="_blank" rel="noopener noreferrer" role="listitem" title="访问 GuYi 核心源码下载仓库">
+              <div class="left"><span class="tag" aria-hidden="true">4</span><span>下载仓库</span></div>
+              <div class="right"><span id="ping-download" class="chip" aria-live="polite" aria-label="节点延迟检测中">测速中</span><span class="arrow" aria-hidden="true">➜</span></div>
+              <span class="sheen" aria-hidden="true"></span>
+            </a>
+            <a class="btn" id="link-qq" href="https://qm.qq.com/q/R8q8Nt43aS" target="_blank" rel="noopener noreferrer" role="listitem" title="加入 GuYi 官方QQ技术交流群">
+              <div class="left"><span class="tag" aria-hidden="true">5</span><span>官方群</span></div>
+              <div class="right"><span id="ping-qq" class="chip" aria-live="polite" aria-label="节点延迟检测中">测速中</span><span class="arrow" aria-hidden="true">➜</span></div>
+              <span class="sheen" aria-hidden="true"></span>
+            </a>
+          </nav>
+
+          <footer class="foot" role="contentinfo" id="random-quotes"></footer>
+        </div>
+      </div>
       
-      <footer class="foot" role="contentinfo" id="poem-container"></footer>
     </section>
   </main>
 
   <script src="file/js/main.js" defer></script>
+
+  <!-- 独立功能 JS（包含随机句子和内嵌音乐播放控制） -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // 1. 随机句子功能
+      const quotes = [
+        "我对你何止半分真心",
+        "願得一人心 白首不分離",
+        "再也见不到我了 你不后悔吗",
+        "我很爱我的女朋友 她笑得真的很甜",
+        "你的爱像是慢性毒药",
+        "世界给你多少偏见 我就给你多少偏爱",
+        "而我已经分不清 你是友情 还是错过的爱情",
+        "我刻舟早就不为求剑了",
+        "如果再遇到爱的人 记得去拉住她的手",
+        "我發誓一定要成為她的caesar",
+        "过往不咎。",
+        "送君茉莉 愿君莫离",
+        "任武林谁领风骚 我却只为你折腰",
+        "不求功成名就 但求人如当年",
+        "直到和你相遇那刻 我才稱之為命運",
+        "赠君茉莉，劝君莫离，若君不离，何需茉莉",
+        "任武林谁独领风骚，我却只为你折腰",
+        "你回眸多娇 我泪中带笑",
+        "我可以对天发誓 绝不会让你一个人孤苦伶仃",
+        "不求功成名就 但求人如当年",
+        "时间冲淡了我们之间的回忆",
+        "顺其自然",
+        "再见的意思是一定会再次相见",
+        "你对谁都好的话 就别对我好了"
+      ];
+
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      const textContainer = document.getElementById('random-quotes');
+      if (textContainer) {
+        textContainer.innerText = quotes[randomIndex];
+      }
+
+      // 2. 播放器控制功能
+      const musicWidget = document.getElementById('music-widget');
+      const bgMusic = document.getElementById('bg-music');
+      const musicStatus = document.getElementById('music-status');
+
+      if (musicWidget && bgMusic) {
+        // 音量默认设置为 30%，舒适不扰人
+        bgMusic.volume = 0.3;
+
+        musicWidget.addEventListener('click', () => {
+          if (bgMusic.paused) {
+            bgMusic.play().then(() => {
+              musicWidget.classList.add('playing');
+              musicStatus.innerText = '正在播放';
+            }).catch((err) => {
+              console.log("浏览器限制自动播放: ", err);
+            });
+          } else {
+            bgMusic.pause();
+            musicWidget.classList.remove('playing');
+            musicStatus.innerText = '点击播放';
+          }
+        });
+      }
+
+      // 3. 移动端动态DOM脱离防卡片遮挡逻辑
+      const pcWidgetContainer = document.getElementById('pc-widget-container');
+      
+      function checkMobileFloat() {
+        if (!musicWidget || !pcWidgetContainer) return;
+        
+        // 当屏幕宽度 <= 768px 时，将播放器抽离到 body，做绝对悬浮
+        if (window.innerWidth <= 768) {
+          if (musicWidget.parentElement !== document.body) {
+            document.body.appendChild(musicWidget);
+            musicWidget.classList.add('mobile-float');
+          }
+        } else {
+          // PC端还原到原卡片内部位置
+          if (musicWidget.parentElement !== pcWidgetContainer) {
+            pcWidgetContainer.appendChild(musicWidget);
+            musicWidget.classList.remove('mobile-float');
+          }
+        }
+      }
+
+      // 初始执行 & 监听窗口变化
+      checkMobileFloat();
+      window.addEventListener('resize', checkMobileFloat);
+    });
+  </script>
 </body>
 </html>
